@@ -1,6 +1,6 @@
 import argparse
 
-def transform(src, des):
+def transform(src):
 
     # read src
     ret = '"'
@@ -17,9 +17,6 @@ def transform(src, des):
             content = fin.readline()
     ret = ret + '"'
 
-    # write des
-    # with open(des, 'w') as fout:
-    #     fout.write(ret)
     print(ret)
 
 
@@ -27,7 +24,6 @@ def transform(src, des):
 if __name__=='__main__':
     p = argparse.ArgumentParser()
     p.add_argument('src', help='source file path')
-    # p.add_argument('des', help='destination file path')
     args = p.parse_args()
 
-    transform(args.src, args.des)
+    transform(args.src)
