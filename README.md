@@ -1,5 +1,5 @@
 # Description
-This script perform a basic simple task: transform a text file to C/C++ string. I don't know what's your user case. For me, I find myself often in a situation where I am writing a bash script and have to create a predefined configuration file. I normally just ```printf``` it. This script can come in handy.
+This script perform a basic simple task: transform a text file to C/C++ string. I don't know what's your user case. For me, I find myself often in a situation where I am writing a bash script and have to create a predefined configuration file. I normally just ```printf``` it as below. This script can come in handy.
 ```bash 
 printf <c/c++ style string>
 ```
